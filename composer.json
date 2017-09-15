@@ -1,5 +1,5 @@
 {
-    "name": "theiconnz/theicon-zf-installer",
+    "name": "theiconnz/zf-installer",
     "description": "The Icon Ecommerce backend installer",
     "license": "BSD-3-Clause",
     "type": "composer-plugin",

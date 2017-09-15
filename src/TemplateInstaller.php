@@ -1,5 +1,5 @@
 <?php
-namespace Forgeonline\FgInstaller;
+namespace Theiconnz\ZfInstaller;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 class TemplateInstaller extends LibraryInstaller
@@ -10,7 +10,7 @@ class TemplateInstaller extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         $prefix = substr($package->getPrettyName(), 0, 11);
-        if ('forgeonline' !== $prefix) {
+        if ('theiconnz' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install template, forgeonline backend installer '
                 .'should always start their package name with '
@@ -25,7 +25,7 @@ class TemplateInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'forgeonline-forgezf' === $packageType;
+        return 'theiconnz-zf' === $packageType;
     }
     
     public function getModuelInstallName( $prefixname ){
